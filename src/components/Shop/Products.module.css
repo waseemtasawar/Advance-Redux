@@ -1,12 +1,38 @@
-.products h2 {
-  color: white;
+.products {
   margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: #1a1a1a; /* Dark background to contrast with white cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  max-width: 1200px;
   text-align: center;
+}
+
+.products h2 {
+  color: #ff6b6b; /* Vibrant color for the heading */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .products ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 2rem; /* Space between product items */
+}
+
+/* Hover effect for the section */
+.products:hover {
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Deepen the shadow */
+  transition: all 0.3s ease;
 }

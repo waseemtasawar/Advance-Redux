@@ -1,16 +1,83 @@
 .cart {
-  max-width: 30rem;
-  background-color: #313131;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #2a2a2a; /* Slightly darker background for the cart */
   color: white;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Adding depth */
+  overflow: hidden;
 }
 
 .cart h2 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin: 0.5rem 0;
+  font-weight: bold;
+  color: #ff6b6b; /* Vibrant red for a pop of color */
+  text-align: center; /* Center the title */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
 }
 
 .cart ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  max-height: 40rem;
+  overflow-y: auto; /* Adds scroll if there are many items */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Space between items */
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #3a3a3a; /* Slightly lighter background for each item */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to each item */
+  transition: all 0.3s ease;
+}
+
+.cart ul li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deepen the shadow */
+}
+
+.cart ul li p {
+  margin: 0;
+}
+
+.cart ul li .total {
+  font-weight: bold;
+  color: #ff6b6b; /* Highlight total amount with red color */
+}
+
+.cart ul li .price {
+  font-size: 1.25rem;
+}
+
+.cart ul li .quantity {
+  font-size: 1.1rem;
+}
+
+.cart ul li button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart ul li button:hover,
+.cart ul li button:active {
+  background-color: #ff3b3b;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shade on hover */
 }

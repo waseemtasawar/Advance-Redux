@@ -1,27 +1,72 @@
-.item h3 {
-  margin: 0.5rem 0;
-  font-size: 1.25rem;
+.item {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover */
+}
+
+/* Header styles */
 .item header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
+.item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #333; /* Darker color for better readability */
+  font-weight: 600; /* Bolder heading */
+}
+
+/* Price styles */
 .price {
   border-radius: 30px;
-  padding: 0.15rem 1.5rem;
-  background-color: #3a3a3a;
+  padding: 0.25rem 1.5rem;
+  background-color: #1a8ed1;
   color: white;
   font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the price */
 }
 
+/* Description styles */
 .item p {
-  color: #3a3a3a;
+  color: #666; /* Softer gray for the description */
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Action button styling */
 .actions {
   display: flex;
   justify-content: flex-end;
+}
+
+.actions button {
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ff3b3b;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

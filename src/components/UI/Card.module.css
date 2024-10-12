@@ -1,8 +1,26 @@
 .card {
-  margin: 1rem auto;
-  border-radius: 6px;
+  margin: 1.5rem auto;
+  border-radius: 12px; /* Slightly larger border radius for smoother corners */
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem; /* Increased padding for a spacious feel */
   width: 90%;
   max-width: 40rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to make the card more interactive */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepened shadow on hover */
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem; /* Slightly reduce padding for smaller screens */
+    max-width: 100%;
+    width: 95%;
+  }
 }

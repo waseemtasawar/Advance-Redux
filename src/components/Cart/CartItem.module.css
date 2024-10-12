@@ -1,58 +1,87 @@
 .item {
-  margin: 1rem 0;
-  background-color: #575757;
-  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #2c2c2c; /* Dark background to match modern aesthetic */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px); /* Slight hover effect */
 }
 
 .item h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.75rem;
+  color: #f5f5f5; /* Light text for contrast */
 }
 
 .item header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0.75rem;
 }
 
-.quantity span {
+.quantity {
   font-size: 1.5rem;
+  color: #f5f5f5;
   font-weight: bold;
 }
 
 .price {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #1ad1b9; /* Accent color for price */
 }
 
 .itemprice {
   font-weight: normal;
   font-size: 1rem;
   font-style: italic;
+  color: #aaa; /* Lighter color for per-item price */
 }
 
 .actions {
   display: flex;
   justify-content: flex-end;
-  margin: 0.5rem 0;
+  margin-top: 1rem;
 }
 
 .actions button {
   background-color: transparent;
-  border: 1px solid white;
-  margin-left: 0.5rem;
-  padding: 0.15rem 1rem;
-  color: white;
+  border: 2px solid #1ad1b9; /* Accent color for buttons */
+  color: #1ad1b9;
+  padding: 0.5rem 1.25rem;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #4b4b4b;
+  background-color: #1ad1b9;
   color: white;
+  border-color: #1ad1b9;
+}
+
+.actions button:disabled {
+  background-color: #4f4f4f;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.actions button:disabled:hover {
+  background-color: #4f4f4f;
+  color: #ccc;
 }
