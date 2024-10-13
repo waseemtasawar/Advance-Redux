@@ -7,6 +7,7 @@ const Cart = (props) => {
   const cartitems = useSelector((state) => state.cart.items);
   return (
     <Card className={classes.cart}>
+      {/* Heading */}
       <h2>Your Shopping Cart</h2>
       <ul>
         {cartitems.map((item) => (

@@ -55,7 +55,7 @@
   background-color: #1ad1b9; /* Accent color on hover */
   color: white;
 }
-
+/* Focus state for accessibility */
 .nav a:focus {
   outline: 3px solid #1ad1b9; /* Focus state for accessibility */
 }
