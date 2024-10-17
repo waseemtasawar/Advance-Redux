@@ -5,7 +5,7 @@ export const uiSlice = createSlice({
   initialState: { cartIsVsible: false, notification: null },
   reducers: {
     toggle: (state) => {
-      state.cartIsVsible = !state.cartIsVsible;
+      state.cartIsVsible = false;
     },
     showNotification: (state, action) => {
       state.notification = {
